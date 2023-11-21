@@ -19,10 +19,12 @@
         margin-top: .5rem;
         padding: .2rem;
         margin-left: .5rem;
+        margin-bottom: .5rem;
         width: 5rem;
         box-shadow: #808e9b .1rem .1rem 0rem;
         transition: transform 0.2s, box shadow 0.2s;
-       
+        
+
     }
     
     
@@ -48,10 +50,7 @@
         padding: .3rem;  
     }
     
-    .form_label-1 {
-    margin-left: 2.5rem;
-    }
-    
+
     .form_div {
         margin-top: .5rem;
         height: 1rem;
@@ -60,7 +59,14 @@
         border-style: solid;
         height: 2rem;
         width: 38rem;
-    
+        border-width: .1rem;
+        display: block;
+    }
+
+    input#color.textfield
+
+    {
+        margin-left: 3.3rem;
     }
     
     
@@ -89,7 +95,7 @@
         border-radius: .5rem;
         margin: auto;
         padding-bottom: 3rem;
-        padding-top: 1rem;
+        padding-top: 3.2rem;
         padding-left: 1rem;  
         
     }
