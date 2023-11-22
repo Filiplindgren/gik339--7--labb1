@@ -35,6 +35,7 @@ let contentInput = document.getElementById('content');
 // Funktion för att visa keyboardinput i textfält och form_div
 function showInput (e) {
     htmlDiv.innerHTML = contentInput.value;
+    // Logga elementet som startade eventet
     console.log(e);
  }
 
@@ -42,25 +43,22 @@ function showInput (e) {
 contentInput.addEventListener('input', showInput);
 
 
-
 // Uppgift 6 
 
 // Sätter en eventlyssnare på checkboxen
-htmlCheckbox.addEventListener('change',changeDivColor)
+htmlCheckbox.addEventListener('change',changeDivColor);
 
 
 
 // Funktion för att ändra färg på form_div när man trycker i checkboxen
 function changeDivColor (e) { 
-
     // Hämta färg från inputfield
     const divColor = allTextfields.item(0).value;
     // sätt färgen som hämtats som bakgrund i diven 
     htmlDiv.style.backgroundColor = divColor;
+    // Logga elementet som startade eventet
     console.log(e);
 }
-
-
 
 
 // Function för att gömma form_div
