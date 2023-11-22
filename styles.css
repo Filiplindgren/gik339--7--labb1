@@ -12,6 +12,11 @@
         font-family:Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: center;
+        
+    }
+
+    .header:hover {
+        transform: scale(1.1);
     }
     
     
@@ -23,6 +28,7 @@
         width: 5rem;
         box-shadow: #808e9b .1rem .1rem 0rem;
         transition: transform 0.2s, box shadow 0.2s;
+        
         
 
     }
@@ -96,7 +102,8 @@
         margin: auto;
         padding-bottom: 3rem;
         padding-top: 3.2rem;
-        padding-left: 1rem;  
+        padding-left: 1rem; 
+        box-shadow: #808e9b .5rem .5rem 0rem; 
         
     }
     
