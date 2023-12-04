@@ -20,23 +20,23 @@ const htmlButton = document.getElementById('form_button');
 
 // Uppgift 4: Hämta div-elementet 
 
-let htmlDiv = document.querySelector('.form_div');
+const htmlDiv = document.querySelector('.form_div');
 
 
 // Uppgift 5
 
-// Hämta textfält med klassen content
-let contentInput = document.getElementById('content');
+// Hämta textfält med klassen content för att sedan kunna använda den för att sätta eventlyssnare 
+const contentInput = document.getElementById('content');
 
 
  // Funktion som används för båda textfälten för det som ska hända när man interagerar med dem på hemsidan, div ändrar färg, text skrivs ut i div
  // Elementen som startar eventet loggas också 
  function showInputAllTextfields(e) {
-    // Hämta textfälten
+    // Hämta textfälten för att kunna hämta deras name attribut
     const colorInputField = allTextfields.item(0);
     const contentInputField = allTextfields.item(1);
 
-    // Hämta deras name attirbut och lagra i en variabel
+    // Hämta deras name attribut och lagra i en variabel
     const contentInputName = contentInputField.getAttribute('name');
     const colorInputName = colorInputField.getAttribute('name');
 
@@ -58,8 +58,9 @@ let contentInput = document.getElementById('content');
 contentInput.addEventListener('input', showInputAllTextfields); 
 
 // Uppgift 6 
+
 // hämta inputfält för färg
-let colorInput = document.getElementById('color');
+const colorInput = document.getElementById('color');
 
 
 
