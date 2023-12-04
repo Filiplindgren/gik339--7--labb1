@@ -49,7 +49,6 @@ contentInput.addEventListener('input', showInput);
 htmlCheckbox.addEventListener('change',changeDivColor);
 
 
-
 // Funktion för att ändra färg på form_div när man trycker i checkboxen
 function changeDivColor (e) { 
     // Hämta färg från inputfield
